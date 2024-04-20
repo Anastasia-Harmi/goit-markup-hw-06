@@ -60,6 +60,7 @@ body {
   align-items: center;
 }
 .page-nav {
+  display: flex;
   gap: 76px;
 }
 .menu {
