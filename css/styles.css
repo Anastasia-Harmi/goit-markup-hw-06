@@ -288,12 +288,9 @@ body {
   gap: 24px;
   row-gap: 48px;
 }
-.four-li,
-.five-li,
-.six-li {
+.portfolio-list-item:nth-child(n + 4) {
   margin-bottom: 0;
 }
-
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
   padding-bottom: 32px;
