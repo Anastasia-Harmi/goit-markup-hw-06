@@ -86,7 +86,6 @@ body {
   align-self: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 76px;
 }
 
 .text-color {
@@ -288,6 +287,11 @@ body {
   gap: 24px;
   row-gap: 48px;
 }
+.four-li,
+.five-li,
+.six-li {
+  margin-bottom: 0;
+}
 
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
@@ -310,8 +314,7 @@ body {
 /* FOOTER */
 .page-footer {
   background: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -325,7 +328,9 @@ body {
   margin-bottom: 16px;
   display: inline-block;
 }
-
+.footer-logo-color {
+  display: inline-block;
+}
 .footer-logo-color {
   color: #f4f4fd;
 }
