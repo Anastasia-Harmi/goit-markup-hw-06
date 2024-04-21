@@ -91,7 +91,6 @@ body {
 
 .text-color {
   color: #2e2f42;
-  margin-right: 76px;
 }
 
 .menu-link {
@@ -137,12 +136,6 @@ body {
   padding: 188px 0;
 }
 
-.hero-container {
-  padding-top: 188px;
-  padding-bottom: 188px;
-  padding-left: 182px;
-  padding-right: 182px;
-}
 .main-title {
   max-width: 496px;
   margin-bottom: 48px;
@@ -151,6 +144,8 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .order-service {
@@ -240,7 +235,6 @@ body {
 .team-list-item {
   background: #ffffff;
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   width: calc((100% - 72px) / 4);
 }
 
@@ -293,7 +287,6 @@ body {
 }
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
-  padding-bottom: 32px;
 }
 
 .portfolio-list-text {
