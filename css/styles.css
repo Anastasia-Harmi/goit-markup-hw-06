@@ -188,6 +188,7 @@ body {
 .order-service:focus {
   background-color: #404bbf;
 }
+
 /* BENEFITS */
 
 .visually-hidden {
@@ -214,9 +215,19 @@ body {
   gap: 24px;
   justify-content: start;
 }
+
 .benefits-list-item {
   width: calc((100% - 72px) / 4);
 }
+.benefits-icon {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  background: #f4f4fd;
+  height: 112px;
+}
+
 .benefits-list-title {
   font-weight: 500;
   font-size: 20px;
