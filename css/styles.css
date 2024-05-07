@@ -605,15 +605,13 @@ body {
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  border-color: #e7e9fc;
   background-color: #e7e9fc;
   fill: #2e2f42;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
@@ -631,8 +629,13 @@ body {
   visibility: visible;
   pointer-events: auto;
 }
+
 .review-form-field-wrapper {
   margin-bottom: 8px;
+}
+
+.review-form-comment-wrapper {
+  margin-bottom: 16px;
 }
 
 .form-input-icon {
