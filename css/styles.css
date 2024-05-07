@@ -500,12 +500,13 @@ body {
 .subscribe-form {
   display: flex;
   gap: 24px;
-  margin-left: 80px;
 }
 
 .subscribe-form-input-wrapper {
   display: flex;
+  flex-direction: column;
   gap: 24px;
+  margin-left: 80px;
 }
 
 .subscribe-form-input {
@@ -649,7 +650,9 @@ body {
   margin-top: 72px;
   margin-bottom: 16px;
 }
-
+.revief-form-field-wrapper {
+  margin-bottom: 16px;
+}
 .review-form-field-label {
   font-size: 12px;
   line-height: 1.17;
@@ -667,6 +670,8 @@ body {
   padding-left: 36px;
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 38px;
+  outline: transparent;
 }
 
 .review-form-input:focus {
@@ -688,6 +693,14 @@ body {
   padding-top: 8px;
   padding-right: 16px;
   padding-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -708,9 +721,9 @@ body {
 }
 .review-form-checkbox-label {
   font-size: 12px;
-  line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  line-height: 1.17;
 }
 
 .privacy-policy-link {
@@ -730,6 +743,9 @@ body {
   border: 1px solid rgba(46, 47, 66, 0.4);
   cursor: pointer;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-checkbox:checked
@@ -738,12 +754,17 @@ body {
   background-color: #404bbf;
   border-color: #404bbf;
   fill: #f4f4fd;
+  border: none;
 }
 
 .review-form-checkbox:focus
   + .review-form-checkbox-label
   .review-form-own-checkbox {
   outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+.review-own-checkbox-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-btn {
@@ -762,4 +783,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  background-color: #e7e9fc;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
