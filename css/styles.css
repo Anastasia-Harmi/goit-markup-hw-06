@@ -503,9 +503,6 @@ body {
 }
 
 .subscribe-form-input-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
   margin-left: 80px;
 }
 
