@@ -603,9 +603,11 @@ body {
   height: 24px;
   padding: 0;
   cursor: pointer;
+
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   border-color: #e7e9fc;
+  background-color: #e7e9fc;
   fill: #2e2f42;
   display: flex;
   justify-content: center;
@@ -650,9 +652,11 @@ body {
   margin-top: 72px;
   margin-bottom: 16px;
 }
+
 .revief-form-field-wrapper {
   margin-bottom: 16px;
 }
+
 .review-form-field-label {
   font-size: 12px;
   line-height: 1.17;
@@ -751,10 +755,10 @@ body {
 .review-form-checkbox:checked
   + .review-form-checkbox-label
   .review-form-own-checkbox {
-  background-color: #404bbf;
-  border-color: #404bbf;
+  border: none;
   fill: #f4f4fd;
   border: none;
+  background-color: #404bbf;
 }
 
 .review-form-checkbox:focus
@@ -771,11 +775,11 @@ body {
   margin: auto;
   display: block;
   margin-top: 24px;
-  border-radius: 4px;
+  border: none;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
@@ -785,6 +789,5 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
