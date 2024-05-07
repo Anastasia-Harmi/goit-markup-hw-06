@@ -498,6 +498,8 @@ body {
 }
 
 .subscribe-form {
+  display: flex;
+  gap 24px;
   margin-left: 80px;
 }
 
@@ -507,7 +509,7 @@ body {
 }
 
 .subscribe-form-input {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 4px;
   width: 264px;
   height: 40px;
