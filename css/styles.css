@@ -149,6 +149,22 @@ body {
 .benefits-icon {
   display: none;
 }
+.benefits-list-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.benefits-list-text {
+  max-width: 288px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 
 /* only-for-mobile */
 @media screen and (max-width: 767px) {
@@ -407,6 +423,21 @@ body {
     margin-right: auto;
     margin-left: auto;
   }
+
+  /* benefits-tablet */
+  .benefits-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .benefits-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .benefits-list-title {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
@@ -455,6 +486,29 @@ body {
   .main-title {
     max-width: 496px;
     margin-bottom: 36px;
+  }
+  /* benefits-dekstop */
+  .benefits-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .benefits-list-text {
+    font-weight: 400;
+  }
+  .benefits-list {
+    flex-wrap: nowrap;
+  }
+  .benefits-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    background: #f4f4fd;
+    height: 112px;
   }
 }
 
