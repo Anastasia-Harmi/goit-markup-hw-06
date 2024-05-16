@@ -246,13 +246,17 @@ body {
 .team-social-icon {
   fill: #f4f4fd;
 }
-
+/* portfolio-mobile */
+.portfolio {
+  padding-top: 96px;
+}
 /* only-for-mobile */
 @media screen and (max-width: 767px) {
   .page-header {
     padding-top: 17.5px;
     padding-bottom: 17.5px;
   }
+
   .mobile-menu {
     position: fixed;
     top: 0;
