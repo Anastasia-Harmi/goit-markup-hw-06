@@ -249,8 +249,46 @@ body {
 /* portfolio-mobile */
 .portfolio {
   padding-top: 96px;
+  padding-bottom: 96px;
 }
-/* only-for-mobile */
+.portfolio-overlay-text {
+  display: none;
+}
+
+.portfolio-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.portfolio-list-item:nth-child(n + 4) {
+  margin-bottom: 0;
+}
+.portfolio-list-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.portfolio-list-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.potfolio-list-border {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+}
+/*************************** only-for-mobile ************************************/
 @media screen and (max-width: 767px) {
   .page-header {
     padding-top: 17.5px;
@@ -387,6 +425,11 @@ body {
   .benefits-list-item {
     max-width: 288px;
   }
+  /* portfolio-only-mobile */
+  .portfolio-list-img-mobile {
+    width: 288px;
+    height: 280px;
+  }
 }
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
@@ -399,7 +442,7 @@ body {
       url(../images/Dark-bg-mobile@2x.jpg);
   }
 }
-/*tablet */
+/*************************tablet **********************************************/
 @media screen and (min-width: 768px) {
   .container {
     max-width: 736px;
@@ -531,20 +574,33 @@ body {
     gap: 24px;
     row-gap: 64px;
   }
-}
+  /* portfolio-tablet */
+  .portfolio-list-img-mobile {
+    width: 356px;
+    height: 300px;
+  }
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .portfolio-list-item {
+    width: calc((100% - 24px) / 2);
+  }
 
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/Dark-bg-tablet@2x.jpg);
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg-tablet@2x.jpg);
+    }
   }
 }
-
-/*dekstop */
+/*********************************dekstop ******************************/
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -602,6 +658,65 @@ body {
     margin-bottom: 8px;
     background: #f4f4fd;
     height: 112px;
+  }
+  /* potfolio-dekstop */
+  .portfolio-list-item {
+    position: relative;
+    overflow: hidden;
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .portfolio-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .portfolio-overlay-text {
+    display: flex;
+    position: absolute;
+    top: 0;
+
+    width: 296px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-list-item:hover .portfolio-overlay-text {
+    transform: translateY(0%);
+  }
+  .portfolio-list-img-mobile {
+    width: 356px;
+    height: 300px;
+  }
+  .portfolio-list-item {
+    position: relative;
+    overflow: hidden;
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-overlay-text {
+    position: absolute;
+    top: 0;
+
+    width: 296px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
